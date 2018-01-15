@@ -16,18 +16,18 @@
         <form>
             <div class="form-group">
                 <label for="Client">Client : </label>
-                <input type="text" class="form-control" id="Client">
+                <input type="text" class="form-control" id="Client"  ng-model="login">
             </div>
             <div class="form-group">
                 <label for="Account">Account : </label>
-                <input type="text" class="form-control" id="Account">
+                <input type="text" class="form-control" id="Account" ng-model="account">
             </div>
             <div class="form-group">
-                <button class="btn btn-default">Display</button>
+                <button class="btn btn-default" ng-click="getAccountDetails()">Display</button>
             </div>
             <div class="form-group">
                 <label for="Balance">Balance : </label>
-                <input type="text" class="form-control" id="Balance" disabled>
+                <input type="text" class="form-control" id="Balance" disabled ng-model="balance">
             </div>
         </form>
     </div>

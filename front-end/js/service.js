@@ -1,11 +1,11 @@
 angular.module('app.services', []).factory('testService', function ($http) {
 
-    var api = {};
+    var api = { baseUrl:"127.0.0.1/api/", version: "v1/"  };
 
     api.getBalance = function (login, account) {
         return $http({
-            method: '',
-            url: ''
+            method: 'get',
+            url: api.baseUrl+api.version+"customer/"+login+"accounts"+account+"/balance"
         });
     }
 
